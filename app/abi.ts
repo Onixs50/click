@@ -16,6 +16,5 @@ export const COUNTER_ABI = [
 ] as const;
 
 // Contract address from env (set in Vercel: NEXT_PUBLIC_COUNTER_ADDRESS)
-export const COUNTER_ADDRESS =
-  process.env.NEXT_PUBLIC_COUNTER_ADDRESS ||
-  "0x40F3ff97Abe37051d37bc28fF156EC1a44cD8Fa9";
+export const COUNTER_ADDRESS = (process.env.NEXT_PUBLIC_COUNTER_ADDRESS ||
+  "0x40F3ff97Abe37051d37bc28fF156EC1a44cD8Fa9") as `0x${string}`;
