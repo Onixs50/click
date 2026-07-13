@@ -9,6 +9,7 @@ import {
   TransactionStatusLabel,
   TransactionStatusAction,
 } from "@coinbase/onchainkit/transaction";
+import type { ContractFunctionParameters } from "viem";
 import { COUNTER_ABI, COUNTER_ADDRESS } from "./abi";
 
 export default function HomePage() {
@@ -34,7 +35,7 @@ export default function HomePage() {
             abi: COUNTER_ABI,
             functionName: "increment",
             args: [],
-          },
+          } as ContractFunctionParameters,
         ]}
       >
         <TransactionButton text="ثبت تراکنش" />
