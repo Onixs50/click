@@ -27,8 +27,8 @@ export default function HomePage() {
       <p>روی دکمه بزن تا یه تراکنش واقعی روی Base ثبت بشه</p>
 
       <Transaction
-        chainId={8453} // Base Sepolia (تست‌نت). برای mainnet بذار 8453
-        contracts={[
+        chainId={8453} // Base mainnet
+        calls={[
           {
             address: COUNTER_ADDRESS,
             abi: COUNTER_ABI,
